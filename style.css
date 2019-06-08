@@ -1,0 +1,64 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+}
+
+.calculator {
+    width: 350px;
+    background-color: black;
+}
+
+.display {
+    width: 100%;
+    direction: rtl;
+    background-color: black;
+    border: 0;
+    color: white;
+    font-size: 3rem;
+    font-family: monospace;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+button {
+    font-size: 2rem;
+    border: 0;
+    width: 24.5%;
+    margin-top: 0.5%;
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+/* Change color of all buttons except operator buttons*/
+button:hover {
+    background-color: #e7e6e6;
+}
+
+/* Operator buttons */
+.row button:last-child {
+    background-color: #e9a424;
+    color: white;
+}
+
+/* Operator buttons hover color */
+.row button:last-child:hover {
+    background-color: #f0ca84;
+}
+
+/* C button */
+.clear {
+    width: 49.6%;
+}
+
+/* Zero number button */
+.row:last-child button:first-child {
+    width: 74.9%;
+}
